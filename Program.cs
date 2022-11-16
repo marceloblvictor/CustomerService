@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.WebHost.UseUrls("https://localhost:7134");
+
 builder.Services.AddDbContext<CustomerDbContext>();
 
 builder.Services.AddControllers();
